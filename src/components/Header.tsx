@@ -76,6 +76,9 @@ export default function Header({ user, storeName }: { user: HeaderUser | null; s
               {t("nav.orders")}
             </Link>
           )}
+          <Link href="/app" className="hover:text-brand">
+            {t("nav.app")}
+          </Link>
           {user?.isAdmin && (
             <Link href="/admin" className="hover:text-brand">
               {t("nav.admin")}
@@ -159,6 +162,9 @@ export default function Header({ user, storeName }: { user: HeaderUser | null; s
                   {t("nav.account")}
                 </Link>
               )}
+              <Link href="/app" className="py-3">
+                {t("nav.app")}
+              </Link>
               {user?.isAdmin && (
                 <Link href="/admin" className="py-3">
                   {t("nav.admin")}

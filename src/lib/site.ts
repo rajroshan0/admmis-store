@@ -6,6 +6,8 @@ export const site = {
   url: (process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000").replace(/\/$/, ""),
   supportPhone: process.env.NEXT_PUBLIC_SUPPORT_PHONE || "",
   supportEmail: process.env.NEXT_PUBLIC_SUPPORT_EMAIL || "",
+  /** Direct link to the Android .apk (EAS build link, GitHub release or Supabase Storage). Empty = "coming soon". */
+  apkUrl: process.env.NEXT_PUBLIC_APK_URL || "",
   city: process.env.NEXT_PUBLIC_STORE_CITY || "Kathmandu, Nepal",
 };
 

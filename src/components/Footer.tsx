@@ -20,6 +20,7 @@ export default function Footer({ lang }: { lang: Lang }) {
         <div>
           <h2 className="text-sm font-semibold uppercase tracking-wider text-ink-mute">{t("footer.help")}</h2>
           <ul className="mt-3 space-y-2 text-sm">
+            <li><Link href="/app" className="hover:text-brand">{t("footer.app")}</Link></li>
             <li><Link href="/legal/returns" className="hover:text-brand">{t("footer.returns")}</Link></li>
             <li><Link href="/legal/privacy" className="hover:text-brand">{t("footer.privacy")}</Link></li>
             <li><Link href="/legal/terms" className="hover:text-brand">{t("footer.terms")}</Link></li>
